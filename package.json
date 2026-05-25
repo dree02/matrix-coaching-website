@@ -1,7 +1,7 @@
 {
-  "name": "matrix-coaching-center",
+  "name": "matrix-academy",
   "version": "1.0.0",
-  "description": "Official website for Matrix Coaching Center, Delhi",
+  "description": "Official website for Matrix Academy, Delhi",
   "private": true,
   "scripts": {
     "dev": "next dev",
