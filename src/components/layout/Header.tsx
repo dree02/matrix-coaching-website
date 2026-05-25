@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-primary-600">
-            Matrix Coaching
+            Matrix Academy
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,6 +1,6 @@
-# Matrix Coaching Center - Official Website
+# Matrix Academy - Official Website
 
-A blazing-fast, modern, and professional static website for a coaching center serving 1,000+ students in Delhi. Built with Next.js 14 and deployed on Cloudflare Pages for **zero-cost hosting**.
+A blazing-fast, modern, and professional static website for an academy serving 1,000+ students in Delhi. Built with Next.js 14 and deployed on Cloudflare Pages for **zero-cost hosting**.
 
 ## 🎯 Project Vision
 
@@ -315,4 +315,4 @@ For issues or questions:
 
 ---
 
-**Built with ❤️ for Matrix Coaching Center**
+**Built with ❤️ for Matrix Academy**

@@ -12,7 +12,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Matrix Coaching Center - Excellence in Education',
+  title: 'Matrix Academy - Excellence in Education',
   description: 'Delhi\'s premier coaching institute for CBSE, ICSE, and competitive exam preparation',
 }
 
