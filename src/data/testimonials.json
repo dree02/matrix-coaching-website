@@ -1,0 +1,52 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Mrs. Sharma",
+      "relation": "Parent of Class 12th Student",
+      "rating": 5,
+      "comment": "My daughter's confidence and grades improved dramatically after joining Matrix. The teachers are exceptional and truly care about each student's progress.",
+      "year": 2024
+    },
+    {
+      "id": 2,
+      "name": "Rahul Verma",
+      "relation": "Class 10th Graduate (2023)",
+      "rating": 5,
+      "comment": "The best decision I made was joining Matrix. The teaching methodology, regular tests, and doubt sessions helped me score 96.8% in boards.",
+      "year": 2023
+    },
+    {
+      "id": 3,
+      "name": "Mr. Gupta",
+      "relation": "Parent of Class 11th Student",
+      "rating": 5,
+      "comment": "Excellent infrastructure and dedicated faculty. My son loves the interactive teaching style and has shown remarkable improvement in Physics and Chemistry.",
+      "year": 2024
+    },
+    {
+      "id": 4,
+      "name": "Ananya Desai",
+      "relation": "Class 12th Graduate (2024)",
+      "rating": 5,
+      "comment": "Matrix prepared me not just for boards but also for NEET. The competitive environment and quality teaching helped me secure AIR 512. Forever grateful!",
+      "year": 2024
+    },
+    {
+      "id": 5,
+      "name": "Mrs. Kapoor",
+      "relation": "Parent of Class 9th Student",
+      "rating": 5,
+      "comment": "Very professional and organized. Regular updates about my child's progress and the monthly parent meetings are extremely helpful.",
+      "year": 2024
+    },
+    {
+      "id": 6,
+      "name": "Arjun Singh",
+      "relation": "Class 11th Student",
+      "rating": 5,
+      "comment": "The teachers explain concepts so well that even the toughest topics become easy. The study material is comprehensive and helpful.",
+      "year": 2024
+    }
+  ]
+}

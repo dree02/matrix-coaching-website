@@ -1,0 +1,83 @@
+{
+  "name": "Matrix Coaching Center",
+  "tagline": "Excellence in Education Since 2015",
+  "description": "Delhi's premier coaching institute for CBSE, ICSE, and competitive exam preparation. With experienced faculty and proven results, we guide 1000+ students toward academic success across our two branches.",
+  "established": 2015,
+  "totalStudents": 1000,
+  "contact": {
+    "phone": "+91-9876543210",
+    "email": "info@matrixcoaching.com",
+    "whatsapp": "+91-9876543210"
+  },
+  "branches": [
+    {
+      "id": "branch-1",
+      "name": "Main Branch",
+      "address": {
+        "street": "Main Location Address",
+        "area": "Area Name",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110xxx",
+        "landmark": "Near Landmark",
+        "googleMapsUrl": "https://share.google/zr9FfUynhwbziLIfy"
+      },
+      "isPrimary": true
+    },
+    {
+      "id": "branch-2",
+      "name": "Second Branch",
+      "address": {
+        "street": "Second Location Address",
+        "area": "Area Name",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110xxx",
+        "landmark": "Near Landmark",
+        "googleMapsUrl": "https://share.google/l9PxIAu7eZBDluowM"
+      },
+      "isPrimary": false
+    }
+  ],
+  "socialMedia": {
+    "facebook": "https://facebook.com/matrixcoaching",
+    "instagram": "https://instagram.com/matrixcoaching",
+    "youtube": "https://youtube.com/@matrixcoaching"
+  },
+  "operatingHours": {
+    "weekdays": "8:00 AM - 8:00 PM",
+    "weekends": "9:00 AM - 6:00 PM"
+  },
+  "keyFeatures": [
+    {
+      "title": "Expert Faculty",
+      "description": "Highly qualified teachers with 10+ years of experience",
+      "icon": "users"
+    },
+    {
+      "title": "Proven Results",
+      "description": "95% students score above 90% in board exams",
+      "icon": "trophy"
+    },
+    {
+      "title": "Small Batches",
+      "description": "Maximum 15-20 students per batch for personalized attention",
+      "icon": "user-check"
+    },
+    {
+      "title": "Modern Infrastructure",
+      "description": "AC classrooms with smart boards and digital learning tools",
+      "icon": "monitor"
+    },
+    {
+      "title": "Regular Tests",
+      "description": "Weekly tests and monthly assessments to track progress",
+      "icon": "clipboard-check"
+    },
+    {
+      "title": "Parent Connect",
+      "description": "Monthly parent-teacher meetings and progress reports",
+      "icon": "users-2"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "academicYears": [
+    {
+      "year": "2023-2024",
+      "board": "CBSE",
+      "highlights": {
+        "totalStudents": 180,
+        "above90Percent": 142,
+        "above95Percent": 68,
+        "perfectScores": 12,
+        "averagePercentage": 91.4
+      },
+      "toppers": [
+        {
+          "rollNumber": "MTX2024001",
+          "name": "Aarav Sharma",
+          "class": "12th",
+          "stream": "Science (PCM)",
+          "percentage": 98.6,
+          "subjects": {
+            "Mathematics": 100,
+            "Physics": 98,
+            "Chemistry": 97,
+            "English": 99,
+            "Computer Science": 99
+          },
+          "achievements": ["JEE Main AIR 245", "School Topper"],
+          "testimonial": "Matrix Coaching Center provided the perfect environment for my preparation. The faculty's dedication and personalized attention helped me achieve my goals."
+        },
+        {
+          "rollNumber": "MTX2024002",
+          "name": "Diya Patel",
+          "class": "12th",
+          "stream": "Science (PCB)",
+          "percentage": 98.2,
+          "subjects": {
+            "Biology": 99,
+            "Chemistry": 98,
+            "Physics": 97,
+            "English": 99,
+            "Physical Education": 98
+          },
+          "achievements": ["NEET AIR 512", "State Rank 45"],
+          "testimonial": "The rigorous test series and doubt-clearing sessions were instrumental in my NEET preparation."
+        },
+        {
+          "rollNumber": "MTX2024015",
+          "name": "Rohan Mehta",
+          "class": "10th",
+          "percentage": 97.8,
+          "subjects": {
+            "Mathematics": 100,
+            "Science": 98,
+            "Social Studies": 97,
+            "English": 97,
+            "Hindi": 96
+          },
+          "achievements": ["School Topper", "National Talent Search Qualifier"],
+          "testimonial": "The foundation I built at Matrix helped me excel in boards and competitive exams alike."
+        }
+      ],
+      "subjectWiseExcellence": [
+        {
+          "subject": "Mathematics",
+          "averageScore": 92.5,
+          "studentsAbove95": 89,
+          "perfectScores": 28
+        },
+        {
+          "subject": "Science/Physics",
+          "averageScore": 90.8,
+          "studentsAbove95": 76,
+          "perfectScores": 15
+        },
+        {
+          "subject": "Chemistry",
+          "averageScore": 91.2,
+          "studentsAbove95": 82,
+          "perfectScores": 19
+        },
+        {
+          "subject": "English",
+          "averageScore": 89.7,
+          "studentsAbove95": 68,
+          "perfectScores": 8
+        }
+      ],
+      "competitiveExams": [
+        {
+          "exam": "JEE Main",
+          "qualified": 45,
+          "topRank": 245
+        },
+        {
+          "exam": "NEET",
+          "qualified": 38,
+          "topRank": 512
+        },
+        {
+          "exam": "NTSE",
+          "qualified": 12,
+          "stateLevel": 8
+        }
+      ]
+    },
+    {
+      "year": "2022-2023",
+      "board": "CBSE",
+      "highlights": {
+        "totalStudents": 165,
+        "above90Percent": 132,
+        "above95Percent": 61,
+        "perfectScores": 9,
+        "averagePercentage": 90.8
+      },
+      "toppers": [
+        {
+          "rollNumber": "MTX2023001",
+          "name": "Priya Singh",
+          "class": "12th",
+          "stream": "Science (PCM)",
+          "percentage": 97.8,
+          "subjects": {
+            "Mathematics": 99,
+            "Physics": 97,
+            "Chemistry": 98,
+            "English": 97,
+            "Physical Education": 98
+          },
+          "achievements": ["JEE Main AIR 387", "District Topper"],
+          "testimonial": "The comprehensive study material and mock tests prepared me exceptionally well."
+        },
+        {
+          "rollNumber": "MTX2023003",
+          "name": "Arjun Kapoor",
+          "class": "10th",
+          "percentage": 97.2,
+          "subjects": {
+            "Mathematics": 100,
+            "Science": 98,
+            "Social Studies": 96,
+            "English": 95,
+            "Hindi": 97
+          },
+          "achievements": ["School Topper", "Mathematics Olympiad Gold"],
+          "testimonial": "Matrix teachers made complex concepts simple and enjoyable to learn."
+        }
+      ],
+      "subjectWiseExcellence": [
+        {
+          "subject": "Mathematics",
+          "averageScore": 91.8,
+          "studentsAbove95": 78,
+          "perfectScores": 24
+        },
+        {
+          "subject": "Science/Physics",
+          "averageScore": 90.2,
+          "studentsAbove95": 72,
+          "perfectScores": 12
+        }
+      ],
+      "competitiveExams": [
+        {
+          "exam": "JEE Main",
+          "qualified": 41,
+          "topRank": 387
+        },
+        {
+          "exam": "NEET",
+          "qualified": 35,
+          "topRank": 678
+        }
+      ]
+    },
+    {
+      "year": "2021-2022",
+      "board": "CBSE",
+      "highlights": {
+        "totalStudents": 152,
+        "above90Percent": 125,
+        "above95Percent": 55,
+        "perfectScores": 7,
+        "averagePercentage": 89.9
+      },
+      "toppers": [
+        {
+          "rollNumber": "MTX2022001",
+          "name": "Kavya Reddy",
+          "class": "12th",
+          "stream": "Science (PCB)",
+          "percentage": 97.4,
+          "subjects": {
+            "Biology": 98,
+            "Chemistry": 97,
+            "Physics": 97,
+            "English": 98,
+            "Physical Education": 97
+          },
+          "achievements": ["NEET AIR 823", "State Biology Olympiad Winner"],
+          "testimonial": "The personalized attention and regular assessments kept me motivated throughout."
+        }
+      ],
+      "competitiveExams": [
+        {
+          "exam": "JEE Main",
+          "qualified": 38,
+          "topRank": 456
+        },
+        {
+          "exam": "NEET",
+          "qualified": 32,
+          "topRank": 823
+        }
+      ]
+    }
+  ],
+  "hallOfFame": [
+    {
+      "category": "University Admissions",
+      "achievements": [
+        "15+ students admitted to IITs (2020-2024)",
+        "28+ students admitted to NITs (2020-2024)",
+        "12+ students in AIIMS/Government Medical Colleges (2020-2024)",
+        "40+ students in DU Top Colleges (2020-2024)"
+      ]
+    },
+    {
+      "category": "Scholarship Winners",
+      "achievements": [
+        "45+ students received merit scholarships",
+        "20+ INSPIRE Award recipients",
+        "15+ Kishore Vaigyanik Protsahan Yojana (KVPY) scholars"
+      ]
+    },
+    {
+      "category": "Olympiad Success",
+      "achievements": [
+        "8 students in INMO (International Mathematical Olympiad)",
+        "12 students in INPhO (International Physics Olympiad)",
+        "6 students in INCHO (International Chemistry Olympiad)"
+      ]
+    }
+  ]
+}

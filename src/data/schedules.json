@@ -1,0 +1,254 @@
+{
+  "classes": [
+    {
+      "id": "class-8",
+      "name": "Class 8th",
+      "board": "CBSE/ICSE",
+      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "batches": [
+        {
+          "id": "c8-batch-1",
+          "name": "Morning Batch",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "8:00 AM - 10:00 AM"
+          },
+          "teacher": {
+            "name": "Mr. Rajesh Kumar",
+            "qualification": "M.Sc. Mathematics",
+            "experience": "12 years"
+          },
+          "capacity": 20,
+          "enrolled": 18,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18000,
+            "annual": 35000
+          }
+        },
+        {
+          "id": "c8-batch-2",
+          "name": "Evening Batch",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 7:00 PM"
+          },
+          "teacher": {
+            "name": "Ms. Priya Sharma",
+            "qualification": "M.Sc. Physics",
+            "experience": "10 years"
+          },
+          "capacity": 20,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18000,
+            "annual": 35000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-9",
+      "name": "Class 9th",
+      "board": "CBSE/ICSE",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology", "English"],
+      "batches": [
+        {
+          "id": "c9-batch-1",
+          "name": "Science Batch A",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "10:30 AM - 12:30 PM"
+          },
+          "teacher": {
+            "name": "Dr. Amit Verma",
+            "qualification": "Ph.D. Chemistry",
+            "experience": "15 years"
+          },
+          "capacity": 20,
+          "enrolled": 20,
+          "fees": {
+            "monthly": 4000,
+            "quarterly": 11500,
+            "halfYearly": 21000,
+            "annual": 40000
+          }
+        },
+        {
+          "id": "c9-batch-2",
+          "name": "Science Batch B",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "3:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Ms. Anjali Gupta",
+            "qualification": "M.Sc. Biology",
+            "experience": "11 years"
+          },
+          "capacity": 20,
+          "enrolled": 17,
+          "fees": {
+            "monthly": 4000,
+            "quarterly": 11500,
+            "halfYearly": 21000,
+            "annual": 40000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-10",
+      "name": "Class 10th",
+      "board": "CBSE/ICSE",
+      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "batches": [
+        {
+          "id": "c10-batch-1",
+          "name": "Board Preparation - Morning",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:00 AM - 8:00 AM"
+          },
+          "teacher": {
+            "name": "Mr. Suresh Patel",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "18 years"
+          },
+          "capacity": 15,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 5000,
+            "quarterly": 14000,
+            "halfYearly": 26000,
+            "annual": 48000
+          }
+        },
+        {
+          "id": "c10-batch-2",
+          "name": "Board Preparation - Evening",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:00 PM - 8:00 PM"
+          },
+          "teacher": {
+            "name": "Ms. Neha Singh",
+            "qualification": "M.Sc. Physics, B.Ed.",
+            "experience": "14 years"
+          },
+          "capacity": 15,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 5000,
+            "quarterly": 14000,
+            "halfYearly": 26000,
+            "annual": 48000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-11-science",
+      "name": "Class 11th (Science)",
+      "board": "CBSE",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology/Computer Science"],
+      "batches": [
+        {
+          "id": "c11-batch-1",
+          "name": "PCM Batch",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday", "Saturday"],
+            "time": "8:00 AM - 11:00 AM"
+          },
+          "teacher": {
+            "name": "Dr. Vikram Malhotra",
+            "qualification": "Ph.D. Physics, IIT Delhi",
+            "experience": "20 years"
+          },
+          "capacity": 20,
+          "enrolled": 19,
+          "fees": {
+            "monthly": 6000,
+            "quarterly": 17000,
+            "halfYearly": 32000,
+            "annual": 60000
+          }
+        },
+        {
+          "id": "c11-batch-2",
+          "name": "PCB Batch",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday", "Sunday"],
+            "time": "2:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Dr. Kavita Rao",
+            "qualification": "MBBS, M.Sc. Zoology",
+            "experience": "16 years"
+          },
+          "capacity": 20,
+          "enrolled": 18,
+          "fees": {
+            "monthly": 6000,
+            "quarterly": 17000,
+            "halfYearly": 32000,
+            "annual": 60000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-12-science",
+      "name": "Class 12th (Science)",
+      "board": "CBSE",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology/Computer Science"],
+      "batches": [
+        {
+          "id": "c12-batch-1",
+          "name": "JEE/Board Batch",
+          "schedule": {
+            "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "time": "6:00 AM - 9:00 AM"
+          },
+          "teacher": {
+            "name": "Mr. Arun Kumar",
+            "qualification": "B.Tech IIT Delhi, M.Tech",
+            "experience": "22 years"
+          },
+          "capacity": 15,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 7000,
+            "quarterly": 20000,
+            "halfYearly": 38000,
+            "annual": 72000
+          }
+        },
+        {
+          "id": "c12-batch-2",
+          "name": "NEET/Board Batch",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
+            "time": "3:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Dr. Meera Joshi",
+            "qualification": "MBBS AIIMS, M.D.",
+            "experience": "19 years"
+          },
+          "capacity": 15,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 7000,
+            "quarterly": 20000,
+            "halfYearly": 38000,
+            "annual": 72000
+          }
+        }
+      ]
+    }
+  ]
+}
