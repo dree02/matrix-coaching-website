@@ -22,6 +22,7 @@ export interface Branch {
   id: string;
   name: string;
   address: Address;
+  contact?: ContactInfo; // Branch-specific contact (optional)
   isPrimary: boolean;
 }
 

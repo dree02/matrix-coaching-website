@@ -17,7 +17,7 @@ export default function ContactPage() {
     
     const message = `Hello! I'm interested in admission.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nClass: ${formData.class}\nMessage: ${formData.message}`
     
-    const whatsappUrl = getWhatsAppLink('+919876543210', message)
+    const whatsappUrl = getWhatsAppLink('+919212355119', message)
     window.open(whatsappUrl, '_blank')
   }
 
@@ -123,10 +123,21 @@ export default function ContactPage() {
                   <Phone className="text-primary-600 flex-shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <a href="tel:+919876543210" className="text-gray-700 hover:text-primary-600">
-                      +91-9876543210
-                    </a>
-                    <p className="text-sm text-gray-500 mt-1">Mon-Sat, 8 AM - 8 PM</p>
+                    <div className="space-y-1">
+                      <div>
+                        <p className="text-sm text-gray-500">Shalimar Garden Branch</p>
+                        <a href="tel:+919212355119" className="text-gray-700 hover:text-primary-600">
+                          +91-9212355119
+                        </a>
+                      </div>
+                      <div>
+                        <p className="text-sm text-gray-500">Rajendra Nagar Branch</p>
+                        <a href="tel:+919212355118" className="text-gray-700 hover:text-primary-600">
+                          +91-9212355118
+                        </a>
+                      </div>
+                    </div>
+                    <p className="text-sm text-gray-500 mt-1">Mon-Sat, 2 PM - 9 PM</p>
                   </div>
                 </div>
 
@@ -134,8 +145,8 @@ export default function ContactPage() {
                   <Mail className="text-primary-600 flex-shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <a href="mailto:info@matrixcoaching.com" className="text-gray-700 hover:text-primary-600">
-                      info@matrixcoaching.com
+                    <a href="mailto:matrixacademysbd@gmail.com" className="text-gray-700 hover:text-primary-600">
+                      matrixacademysbd@gmail.com
                     </a>
                   </div>
                 </div>
@@ -145,7 +156,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Our Locations</h3>
                     <p className="text-gray-700 text-sm mb-2">
-                      We have two branches in Delhi
+                      Two branches in Ghaziabad, Uttar Pradesh
                     </p>
                     <a href="/#locations" className="text-primary-600 hover:text-primary-700 text-sm font-semibold">
                       View detailed addresses →
