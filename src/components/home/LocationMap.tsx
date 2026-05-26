@@ -32,10 +32,17 @@ export default function LocationMap({ info }: LocationMapProps) {
                 <div>
                   <p className="text-gray-700">
                     {branch.address.street}<br />
-                    {branch.address.area}, {branch.address.city}<br />
-                    {branch.address.state} - {branch.address.pincode}<br />
-                    <span className="text-sm text-gray-600">({branch.address.landmark})</span>
+                    {branch.address.area}<br />
+                    {branch.address.city}, {branch.address.state} - {branch.address.pincode}
                   </p>
+                  {branch.contact && (
+                    <p className="text-gray-700 mt-2 flex items-center gap-2">
+                      <Phone size={16} className="text-primary-600" />
+                      <a href={`tel:${branch.contact.phone}`} className="hover:text-primary-600">
+                        {branch.contact.phone}
+                      </a>
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -51,13 +58,14 @@ export default function LocationMap({ info }: LocationMapProps) {
               {/* Map Preview */}
               <div className="mt-4 bg-gray-200 rounded-lg h-64 overflow-hidden">
                 <iframe
-                  src={branch.address.googleMapsUrl.replace('share.google', 'www.google.com/maps/embed')}
+                  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.${branch.id === 'branch-shalimar' ? '09876543210' : '12345678901'}!2d77.${branch.id === 'branch-shalimar' ? '379' : '380'}!3d28.${branch.id === 'branch-shalimar' ? '681' : '682'}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQwJzUyLjIiTiA3N8KwMjInNDMuMiJF!5e0!3m2!1sen!2sin!4v1234567890`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  title={`Map of ${branch.name}`}
                 />
               </div>
             </div>

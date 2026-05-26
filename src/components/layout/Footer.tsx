@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Matrix Academy</h3>
             <p className="text-gray-400">
-              Excellence in Education Since 2015. Guiding students toward academic success.
+              Excellence in Education Since 2001. Guiding students toward academic success.
             </p>
           </div>
 
@@ -31,15 +31,18 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-2">
                 <Phone size={18} className="mt-1 flex-shrink-0" />
-                <span>+91-9876543210</span>
+                <div>
+                  <div>Shalimar: +91-9212355119</div>
+                  <div>Rajendra Nagar: +91-9212355118</div>
+                </div>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={18} className="mt-1 flex-shrink-0" />
-                <span>info@matrixcoaching.com</span>
+                <span>matrixacademysbd@gmail.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span>Two branches across Delhi - See locations page</span>
+                <span>Two branches in Ghaziabad - Shalimar Garden & Rajendra Nagar</span>
               </li>
             </ul>
             
