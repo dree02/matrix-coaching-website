@@ -7,6 +7,7 @@ import { Trophy, Award, TrendingUp } from 'lucide-react'
 
 export default function ResultsPage() {
   const [academicYears, setAcademicYears] = useState<AcademicYear[]>([])
+  const [selectedClass, setSelectedClass] = useState<'10th' | '12th'>('10th')
   const [selectedYear, setSelectedYear] = useState<string>('')
 
   useEffect(() => {
@@ -19,6 +20,21 @@ export default function ResultsPage() {
   }, [])
 
   const currentYear = academicYears.find(y => y.year === selectedYear)
+  
+  // Filter toppers by selected class
+  const filteredToppers = currentYear?.toppers.filter(topper => topper.class === selectedClass) || []
+  
+  // Calculate class-specific highlights
+  const classHighlights = currentYear ? {
+    totalStudents: currentYear.toppers.filter(t => t.class === selectedClass).length,
+    above90Percent: currentYear.toppers.filter(t => t.class === selectedClass && t.percentage >= 90).length,
+    above95Percent: currentYear.toppers.filter(t => t.class === selectedClass && t.percentage >= 95).length,
+    perfectScores: currentYear.toppers.filter(t => t.class === selectedClass && t.percentage === 100).length,
+    averagePercentage: currentYear.toppers.filter(t => t.class === selectedClass).length > 0
+      ? (currentYear.toppers.filter(t => t.class === selectedClass).reduce((sum, t) => sum + t.percentage, 0) / 
+         currentYear.toppers.filter(t => t.class === selectedClass).length).toFixed(1)
+      : '0'
+  } : null
 
   return (
     <div className="py-12 bg-gray-50 min-h-screen">
@@ -30,12 +46,39 @@ export default function ResultsPage() {
           </p>
         </div>
 
-        {/* Year Filter */}
-        <div className="mb-8 flex justify-center">
+        {/* Filters */}
+        <div className="mb-8 flex flex-col sm:flex-row justify-center gap-4">
+          {/* Class Filter */}
+          <div className="flex justify-center">
+            <div className="inline-flex rounded-lg border-2 border-gray-300 p-1 bg-white">
+              <button
+                onClick={() => setSelectedClass('10th')}
+                className={`px-6 py-2 rounded-md font-semibold transition-colors ${
+                  selectedClass === '10th'
+                    ? 'bg-primary-600 text-white'
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+              >
+                Class 10th
+              </button>
+              <button
+                onClick={() => setSelectedClass('12th')}
+                className={`px-6 py-2 rounded-md font-semibold transition-colors ${
+                  selectedClass === '12th'
+                    ? 'bg-primary-600 text-white'
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+              >
+                Class 12th
+              </button>
+            </div>
+          </div>
+
+          {/* Year Filter */}
           <select
             value={selectedYear}
             onChange={(e) => setSelectedYear(e.target.value)}
-            className="px-4 py-3 border-2 border-gray-300 rounded-lg text-lg font-medium focus:outline-none focus:border-primary-500"
+            className="px-6 py-3 border-2 border-gray-300 rounded-lg text-lg font-medium focus:outline-none focus:border-primary-500 bg-white"
           >
             {academicYears.map(year => (
               <option key={year.year} value={year.year}>
@@ -45,14 +88,24 @@ export default function ResultsPage() {
           </select>
         </div>
 
-        {currentYear && (
+        {currentYear && classHighlights && (
           <>
+            {/* Class-specific Highlights */}
+            <div className="bg-primary-50 border-2 border-primary-200 rounded-lg p-4 mb-8 text-center">
+              <h3 className="text-xl font-bold text-primary-900 mb-2">
+                CBSE Class {selectedClass} Board Results - {selectedYear}
+              </h3>
+              <p className="text-primary-700">
+                Showing top performers and achievements
+              </p>
+            </div>
+
             {/* Highlights */}
             <div className="grid md:grid-cols-4 gap-6 mb-12">
               <div className="bg-white p-6 rounded-lg shadow-card text-center">
                 <TrendingUp className="mx-auto text-primary-600 mb-3" size={32} />
                 <div className="text-3xl font-bold text-primary-600 mb-2">
-                  {currentYear.highlights.averagePercentage}%
+                  {classHighlights.averagePercentage}%
                 </div>
                 <div className="text-gray-600">Average Percentage</div>
               </div>
@@ -60,7 +113,7 @@ export default function ResultsPage() {
               <div className="bg-white p-6 rounded-lg shadow-card text-center">
                 <Award className="mx-auto text-green-600 mb-3" size={32} />
                 <div className="text-3xl font-bold text-green-600 mb-2">
-                  {currentYear.highlights.above90Percent}
+                  {classHighlights.above90Percent}
                 </div>
                 <div className="text-gray-600">Above 90%</div>
               </div>
@@ -68,7 +121,7 @@ export default function ResultsPage() {
               <div className="bg-white p-6 rounded-lg shadow-card text-center">
                 <Trophy className="mx-auto text-yellow-600 mb-3" size={32} />
                 <div className="text-3xl font-bold text-yellow-600 mb-2">
-                  {currentYear.highlights.above95Percent}
+                  {classHighlights.above95Percent}
                 </div>
                 <div className="text-gray-600">Above 95%</div>
               </div>
@@ -76,17 +129,20 @@ export default function ResultsPage() {
               <div className="bg-white p-6 rounded-lg shadow-card text-center">
                 <Trophy className="mx-auto text-orange-600 mb-3" size={32} />
                 <div className="text-3xl font-bold text-orange-600 mb-2">
-                  {currentYear.highlights.perfectScores}
+                  {classHighlights.perfectScores}
                 </div>
                 <div className="text-gray-600">Perfect Scores</div>
               </div>
             </div>
 
             {/* Toppers */}
-            <div className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-center">Top Performers</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {currentYear.toppers.map(topper => (
+            {filteredToppers.length > 0 ? (
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold mb-6 text-center">
+                  Top Performers - Class {selectedClass}
+                </h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredToppers.map(topper => (
                   <div key={topper.rollNumber} className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-shadow">
                     <div className="flex items-start justify-between mb-4">
                       <div>
@@ -131,12 +187,19 @@ export default function ResultsPage() {
                       </div>
                     )}
                   </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="text-center py-12 bg-white rounded-lg shadow-card">
+                <p className="text-gray-600 text-lg">
+                  No results available for Class {selectedClass} in {selectedYear}
+                </p>
+              </div>
+            )}
 
-            {/* Competitive Exams */}
-            {currentYear.competitiveExams && currentYear.competitiveExams.length > 0 && (
+            {/* Competitive Exams - Only show for 12th class */}
+            {selectedClass === '12th' && currentYear.competitiveExams && currentYear.competitiveExams.length > 0 && (
               <div className="bg-white p-8 rounded-lg shadow-card">
                 <h2 className="text-3xl font-bold mb-6 text-center">Competitive Exam Results</h2>
                 <div className="grid md:grid-cols-3 gap-6">
