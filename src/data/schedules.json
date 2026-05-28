@@ -3,49 +3,29 @@
     {
       "id": "class-8",
       "name": "Class 8th",
-      "board": "CBSE/ICSE",
-      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "board": "CBSE",
+      "branch": "Rajendra Nagar",
+      "subjects": ["Mathematics", "Science", "English"],
       "batches": [
         {
-          "id": "c8-batch-1",
-          "name": "Morning Batch",
+          "id": "c8-rn-batch",
+          "name": "Mathematics & Science Batch",
           "schedule": {
-            "days": ["Monday", "Wednesday", "Friday"],
-            "time": "8:00 AM - 10:00 AM"
+            "days": ["Monday", "Wednesday", "Friday", "Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
           },
           "teacher": {
-            "name": "Mr. Rajesh Kumar",
-            "qualification": "M.Sc. Mathematics",
-            "experience": "12 years"
-          },
-          "capacity": 20,
-          "enrolled": 18,
-          "fees": {
-            "monthly": 3500,
-            "quarterly": 10000,
-            "halfYearly": 18000,
-            "annual": 35000
-          }
-        },
-        {
-          "id": "c8-batch-2",
-          "name": "Evening Batch",
-          "schedule": {
-            "days": ["Tuesday", "Thursday", "Saturday"],
-            "time": "5:00 PM - 7:00 PM"
-          },
-          "teacher": {
-            "name": "Ms. Priya Sharma",
-            "qualification": "M.Sc. Physics",
-            "experience": "10 years"
+            "name": "Neetu Ma'am",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
           },
           "capacity": 20,
           "enrolled": 15,
           "fees": {
-            "monthly": 3500,
-            "quarterly": 10000,
-            "halfYearly": 18000,
-            "annual": 35000
+            "monthly": 1800,
+            "quarterly": 5100,
+            "halfYearly": 9600,
+            "annual": 18000
           }
         }
       ]
@@ -53,49 +33,50 @@
     {
       "id": "class-9",
       "name": "Class 9th",
-      "board": "CBSE/ICSE",
-      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology", "English"],
+      "board": "CBSE",
+      "branch": "Rajendra Nagar",
+      "subjects": ["Mathematics", "Science", "English"],
       "batches": [
         {
-          "id": "c9-batch-1",
-          "name": "Science Batch A",
+          "id": "c9-rn-batch1-tts",
+          "name": "Mathematics & Science - TTS",
           "schedule": {
-            "days": ["Monday", "Wednesday", "Friday"],
-            "time": "10:30 AM - 12:30 PM"
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "3:00 PM - 4:00 PM"
           },
           "teacher": {
-            "name": "Dr. Amit Verma",
-            "qualification": "Ph.D. Chemistry",
-            "experience": "15 years"
+            "name": "Alok Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
           },
           "capacity": 20,
-          "enrolled": 20,
+          "enrolled": 16,
           "fees": {
-            "monthly": 4000,
-            "quarterly": 11500,
-            "halfYearly": 21000,
-            "annual": 40000
+            "monthly": 2300,
+            "quarterly": 6600,
+            "halfYearly": 12400,
+            "annual": 23000
           }
         },
         {
-          "id": "c9-batch-2",
-          "name": "Science Batch B",
+          "id": "c9-rn-batch2-mwf",
+          "name": "Mathematics & Science - MWF",
           "schedule": {
-            "days": ["Tuesday", "Thursday", "Saturday"],
-            "time": "3:00 PM - 5:00 PM"
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:00 PM - 7:00 PM"
           },
           "teacher": {
-            "name": "Ms. Anjali Gupta",
-            "qualification": "M.Sc. Biology",
-            "experience": "11 years"
+            "name": "Prakash Khatri",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
           },
           "capacity": 20,
-          "enrolled": 17,
+          "enrolled": 14,
           "fees": {
-            "monthly": 4000,
-            "quarterly": 11500,
-            "halfYearly": 21000,
-            "annual": 40000
+            "monthly": 2300,
+            "quarterly": 6600,
+            "halfYearly": 12400,
+            "annual": 23000
           }
         }
       ]
@@ -103,149 +84,881 @@
     {
       "id": "class-10",
       "name": "Class 10th",
-      "board": "CBSE/ICSE",
+      "board": "CBSE",
+      "branch": "Rajendra Nagar",
       "subjects": ["Mathematics", "Science", "English", "Social Studies"],
       "batches": [
         {
-          "id": "c10-batch-1",
-          "name": "Board Preparation - Morning",
+          "id": "c10-rn-morning-mwf",
+          "name": "Early Morning Batch - MWF",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
-            "time": "6:00 AM - 8:00 AM"
+            "time": "6:45 AM - 7:45 AM"
           },
           "teacher": {
-            "name": "Mr. Suresh Patel",
+            "name": "Alok Sir",
             "qualification": "M.Sc. Mathematics, B.Ed.",
-            "experience": "18 years"
+            "experience": "15+ years"
           },
           "capacity": 15,
-          "enrolled": 15,
+          "enrolled": 6,
           "fees": {
-            "monthly": 5000,
-            "quarterly": 14000,
-            "halfYearly": 26000,
-            "annual": 48000
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
           }
         },
         {
-          "id": "c10-batch-2",
-          "name": "Board Preparation - Evening",
+          "id": "c10-rn-morning-tts",
+          "name": "Early Morning Batch - TTS",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
-            "time": "6:00 PM - 8:00 PM"
+            "time": "6:45 AM - 7:45 AM"
           },
           "teacher": {
-            "name": "Ms. Neha Singh",
-            "qualification": "M.Sc. Physics, B.Ed.",
-            "experience": "14 years"
+            "name": "Rawat Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
           },
           "capacity": 15,
-          "enrolled": 14,
+          "enrolled": 6,
           "fees": {
-            "monthly": 5000,
-            "quarterly": 14000,
-            "halfYearly": 26000,
-            "annual": 48000
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-rn-afternoon1",
+          "name": "Afternoon Batch - MWF 3PM",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "3:00 PM - 4:00 PM"
+          },
+          "teacher": {
+            "name": "Neetu Madan",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 18,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-rn-afternoon2",
+          "name": "Afternoon Batch - TTS 4PM",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Aakash Khatri",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 18,
+          "enrolled": 16,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-rn-evening1",
+          "name": "Evening Batch - MWF 5PM",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Namita Madan",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 18,
+          "enrolled": 17,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-rn-evening2",
+          "name": "Evening Batch - TTS 6:15PM",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:15 PM - 8:00 PM"
+          },
+          "teacher": {
+            "name": "Aicash Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 18,
+          "enrolled": 18,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
           }
         }
       ]
     },
     {
-      "id": "class-11-science",
-      "name": "Class 11th (Science)",
+      "id": "class-11",
+      "name": "Class 11th",
       "board": "CBSE",
-      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology/Computer Science"],
+      "branch": "Rajendra Nagar",
+      "subjects": ["Mathematics", "Physics", "Chemistry"],
       "batches": [
         {
-          "id": "c11-batch-1",
-          "name": "PCM Batch",
+          "id": "c11-rn-batch1-mwf",
+          "name": "PCM Batch - MWF 4PM",
           "schedule": {
-            "days": ["Monday", "Wednesday", "Friday", "Saturday"],
-            "time": "8:00 AM - 11:00 AM"
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "4:00 PM - 5:00 PM"
           },
           "teacher": {
-            "name": "Dr. Vikram Malhotra",
-            "qualification": "Ph.D. Physics, IIT Delhi",
-            "experience": "20 years"
+            "name": "Rawat Sir",
+            "qualification": "M.Sc. Mathematics",
+            "experience": "15+ years"
           },
           "capacity": 20,
-          "enrolled": 19,
+          "enrolled": 9,
           "fees": {
-            "monthly": 6000,
-            "quarterly": 17000,
-            "halfYearly": 32000,
-            "annual": 60000
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
           }
         },
         {
-          "id": "c11-batch-2",
-          "name": "PCB Batch",
+          "id": "c11-rn-batch1-tts",
+          "name": "PCM Batch - TTS 4PM",
           "schedule": {
-            "days": ["Tuesday", "Thursday", "Saturday", "Sunday"],
-            "time": "2:00 PM - 5:00 PM"
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
           },
           "teacher": {
-            "name": "Dr. Kavita Rao",
-            "qualification": "MBBS, M.Sc. Zoology",
-            "experience": "16 years"
+            "name": "Vivek Sir",
+            "qualification": "M.Sc. Physics",
+            "experience": "15+ years"
+          },
+          "capacity": 20,
+          "enrolled": 9,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c11-rn-batch2-mwf",
+          "name": "PCM Batch - MWF 6PM",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:00 PM - 7:00 PM"
+          },
+          "teacher": {
+            "name": "Priya Lalit Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 8,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c11-rn-batch2-tts",
+          "name": "PCM Batch - TTS 6PM",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:00 PM - 7:00 PM"
+          },
+          "teacher": {
+            "name": "Manoj Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 7,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-12",
+      "name": "Class 12th",
+      "board": "CBSE",
+      "branch": "Rajendra Nagar",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Applied Mathematics"],
+      "batches": [
+        {
+          "id": "c12-rn-pcm1-mwf",
+          "name": "PCM - MWF 4PM",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Lalit Sir",
+            "qualification": "M.Sc. Mathematics",
+            "experience": "18+ years"
+          },
+          "capacity": 15,
+          "enrolled": 8,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-rn-pcm1-tts",
+          "name": "PCM - TTS 4PM",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Priyanka",
+            "qualification": "M.Sc. Mathematics",
+            "experience": "10+ years"
+          },
+          "capacity": 15,
+          "enrolled": 7,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-rn-pcm2-mwf",
+          "name": "PCM - MWF 5PM",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Rawal Sir",
+            "qualification": "M.Sc. Physics",
+            "experience": "15+ years"
+          },
+          "capacity": 15,
+          "enrolled": 7,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-rn-pcm2-tts",
+          "name": "PCM - TTS 5PM",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Vivek Sir",
+            "qualification": "M.Sc. Physics",
+            "experience": "12+ years"
+          },
+          "capacity": 15,
+          "enrolled": 7,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-rn-applied",
+          "name": "Applied Mathematics - TTS",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "8:00 AM - 9:00 AM"
+          },
+          "teacher": {
+            "name": "Rawal Sir",
+            "qualification": "M.Sc. Mathematics",
+            "experience": "15+ years"
+          },
+          "capacity": 15,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 1800,
+            "quarterly": 5100,
+            "halfYearly": 9600,
+            "annual": 18000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-9-sg",
+      "name": "Class 9th",
+      "board": "CBSE",
+      "branch": "Shalimar Garden",
+      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "batches": [
+        {
+          "id": "c9-sg-science-mwf",
+          "name": "Science Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Akash Sharma Sir",
+            "qualification": "M.Sc. Science, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18500,
+            "annual": 35000
+          }
+        },
+        {
+          "id": "c9-sg-maths-tts",
+          "name": "Mathematics Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Faculty Member",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18500,
+            "annual": 35000
+          }
+        },
+        {
+          "id": "c9-sg-english-mwf",
+          "name": "English Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "5:15 PM - 6:15 PM"
+          },
+          "teacher": {
+            "name": "Namita Ma'am",
+            "qualification": "M.A. English, B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18500,
+            "annual": 35000
+          }
+        },
+        {
+          "id": "c9-sg-maths-evening-mwf",
+          "name": "Mathematics Evening Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:30 PM - 7:30 PM"
+          },
+          "teacher": {
+            "name": "Alok Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 20,
+          "enrolled": 16,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18500,
+            "annual": 35000
+          }
+        },
+        {
+          "id": "c9-sg-science-tts",
+          "name": "Science Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:30 PM - 7:30 PM"
+          },
+          "teacher": {
+            "name": "Faculty Member",
+            "qualification": "M.Sc. Science, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 13,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18500,
+            "annual": 35000
+          }
+        },
+        {
+          "id": "c9-sg-sst-tts",
+          "name": "Social Studies Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "7:15 PM - 8:15 PM"
+          },
+          "teacher": {
+            "name": "Akash Khatri Sir",
+            "qualification": "M.A. History/Political Science, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 3500,
+            "quarterly": 10000,
+            "halfYearly": 18500,
+            "annual": 35000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-10-sg",
+      "name": "Class 10th",
+      "board": "CBSE",
+      "branch": "Shalimar Garden",
+      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "batches": [
+        {
+          "id": "c10-sg-science-mwf",
+          "name": "Science Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Akash Sharma",
+            "qualification": "M.Sc. Science, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 17,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-maths-tts",
+          "name": "Mathematics Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Faculty Member",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-english-mwf",
+          "name": "English Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:15 PM - 7:15 PM"
+          },
+          "teacher": {
+            "name": "Namita Ma'am",
+            "qualification": "M.A. English, B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 16,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-maths-evening-mwf",
+          "name": "Mathematics Evening Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "7:15 PM - 8:15 PM"
+          },
+          "teacher": {
+            "name": "Rawat Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
           },
           "capacity": 20,
           "enrolled": 18,
           "fees": {
-            "monthly": 6000,
-            "quarterly": 17000,
-            "halfYearly": 32000,
-            "annual": 60000
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-maths-late-mwf",
+          "name": "Mathematics Late Evening Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "7:30 PM - 8:30 PM"
+          },
+          "teacher": {
+            "name": "Alok",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 20,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-science-tts",
+          "name": "Science Evening Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "7:30 PM - 8:30 PM"
+          },
+          "teacher": {
+            "name": "Faculty Member",
+            "qualification": "M.Sc. Science, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 13,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-science-afternoon-tts",
+          "name": "Science Afternoon Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Vivek Sir",
+            "qualification": "M.Sc. Science, B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
+          }
+        },
+        {
+          "id": "c10-sg-sst-tts",
+          "name": "Social Studies Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:15 PM - 7:15 PM"
+          },
+          "teacher": {
+            "name": "Akash Khatri Sir",
+            "qualification": "M.A. History/Political Science, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 16,
+          "fees": {
+            "monthly": 2500,
+            "quarterly": 7200,
+            "halfYearly": 13500,
+            "annual": 25000
           }
         }
       ]
     },
     {
-      "id": "class-12-science",
-      "name": "Class 12th (Science)",
+      "id": "class-11-sg",
+      "name": "Class 11th",
       "board": "CBSE",
-      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology/Computer Science"],
+      "branch": "Shalimar Garden",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Accounts"],
       "batches": [
         {
-          "id": "c12-batch-1",
-          "name": "JEE/Board Batch",
+          "id": "c11-sg-maths-mwf",
+          "name": "Mathematics Batch (MWF)",
           "schedule": {
-            "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "time": "6:00 AM - 9:00 AM"
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:15 PM - 7:15 PM"
           },
           "teacher": {
-            "name": "Mr. Arun Kumar",
-            "qualification": "B.Tech IIT Delhi, M.Tech",
-            "experience": "22 years"
+            "name": "Rawat Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
           },
-          "capacity": 15,
-          "enrolled": 15,
+          "capacity": 20,
+          "enrolled": 16,
           "fees": {
-            "monthly": 7000,
-            "quarterly": 20000,
-            "halfYearly": 38000,
-            "annual": 72000
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
           }
         },
         {
-          "id": "c12-batch-2",
-          "name": "NEET/Board Batch",
+          "id": "c11-sg-chemistry-tts",
+          "name": "Chemistry Batch (TTS)",
           "schedule": {
-            "days": ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-            "time": "3:00 PM - 6:00 PM"
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 6:00 PM"
           },
           "teacher": {
-            "name": "Dr. Meera Joshi",
-            "qualification": "MBBS AIIMS, M.D.",
-            "experience": "19 years"
+            "name": "Divya Ma'am",
+            "qualification": "M.Sc. Chemistry, B.Ed.",
+            "experience": "10+ years"
           },
-          "capacity": 15,
+          "capacity": 20,
           "enrolled": 15,
           "fees": {
-            "monthly": 7000,
-            "quarterly": 20000,
-            "halfYearly": 38000,
-            "annual": 72000
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c11-sg-physics-tts",
+          "name": "Physics Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:15 PM - 7:15 PM"
+          },
+          "teacher": {
+            "name": "Vivek Sir",
+            "qualification": "M.Sc. Physics, B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c11-sg-accounts-tts",
+          "name": "Accounts Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:45 PM - 5:45 PM"
+          },
+          "teacher": {
+            "name": "Kavita Ma'am",
+            "qualification": "M.Com, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c11-sg-maths-evening-tts",
+          "name": "Mathematics Evening Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "8:30 PM - 9:30 PM"
+          },
+          "teacher": {
+            "name": "Alok Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 20,
+          "enrolled": 13,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-12-sg",
+      "name": "Class 12th",
+      "board": "CBSE",
+      "branch": "Shalimar Garden",
+      "subjects": ["Mathematics", "Physics", "Accounts"],
+      "batches": [
+        {
+          "id": "c12-sg-maths-morning-mwf",
+          "name": "Mathematics Morning Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:30 PM - 7:30 PM"
+          },
+          "teacher": {
+            "name": "Lalit Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "18+ years"
+          },
+          "capacity": 15,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-sg-maths-evening-mwf",
+          "name": "Mathematics Evening Batch (MWF)",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "8:30 PM - 9:30 PM"
+          },
+          "teacher": {
+            "name": "Alok Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 15,
+          "enrolled": 13,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-sg-maths-tts",
+          "name": "Mathematics Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Rawat Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 15,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-sg-physics-tts",
+          "name": "Physics Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:15 PM - 6:15 PM"
+          },
+          "teacher": {
+            "name": "Vivek Sir",
+            "qualification": "M.Sc. Physics, B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 15,
+          "enrolled": 11,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
+          }
+        },
+        {
+          "id": "c12-sg-accounts-tts",
+          "name": "Accounts Batch (TTS)",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Kavita Ma'am",
+            "qualification": "M.Com, B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 15,
+          "enrolled": 10,
+          "fees": {
+            "monthly": 5200,
+            "quarterly": 14900,
+            "halfYearly": 28000,
+            "annual": 52000
           }
         }
       ]

@@ -68,6 +68,7 @@ export interface ClassSchedule {
   id: string;
   name: string; // e.g., "Class 10th"
   board: string; // e.g., "CBSE/ICSE"
+  branch: string; // e.g., "Rajendra Nagar" or "Shalimar Garden"
   subjects: string[];
   batches: Batch[];
 }
