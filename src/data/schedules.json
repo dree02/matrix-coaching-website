@@ -6,12 +6,20 @@
       "board": "CBSE",
       "branch": "Rajendra Nagar",
       "subjects": ["Mathematics", "Science", "English"],
+      "comboOffers": [
+        {
+          "label": "Maths + Science Bundle",
+          "subjects": ["Mathematics", "Science"],
+          "monthlyFee": 1800,
+          "savingsPerMonth": 200
+        }
+      ],
       "batches": [
         {
-          "id": "c8-rn-batch",
-          "name": "Mathematics & Science Batch",
+          "id": "c8-rn-maths",
+          "name": "Mathematics",
           "schedule": {
-            "days": ["Monday", "Wednesday", "Friday", "Tuesday", "Thursday", "Saturday"],
+            "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"
           },
           "teacher": {
@@ -22,10 +30,31 @@
           "capacity": 20,
           "enrolled": 15,
           "fees": {
-            "monthly": 1800,
-            "quarterly": 5100,
-            "halfYearly": 9600,
-            "annual": 18000
+            "monthly": 1000,
+            "quarterly": 2800,
+            "halfYearly": 5400,
+            "annual": 10000
+          }
+        },
+        {
+          "id": "c8-rn-science",
+          "name": "Science",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Neetu Ma'am",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 1000,
+            "quarterly": 2800,
+            "halfYearly": 5400,
+            "annual": 10000
           }
         }
       ]
@@ -35,11 +64,40 @@
       "name": "Class 9th",
       "board": "CBSE",
       "branch": "Rajendra Nagar",
-      "subjects": ["Mathematics", "Science", "English"],
+      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "comboOffers": [
+        {
+          "label": "Maths + Science Bundle",
+          "subjects": ["Mathematics", "Science"],
+          "monthlyFee": 2300,
+          "savingsPerMonth": 100
+        }
+      ],
       "batches": [
         {
-          "id": "c9-rn-batch1-tts",
-          "name": "Mathematics & Science - TTS",
+          "id": "c9-rn-alok-maths-mwf",
+          "name": "Mathematics",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "3:00 PM - 4:00 PM"
+          },
+          "teacher": {
+            "name": "Alok Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 20,
+          "enrolled": 16,
+          "fees": {
+            "monthly": 1200,
+            "quarterly": 3400,
+            "halfYearly": 6600,
+            "annual": 12000
+          }
+        },
+        {
+          "id": "c9-rn-alok-science-tts",
+          "name": "Science",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "3:00 PM - 4:00 PM"
@@ -52,31 +110,136 @@
           "capacity": 20,
           "enrolled": 16,
           "fees": {
-            "monthly": 2300,
-            "quarterly": 6600,
-            "halfYearly": 12400,
-            "annual": 23000
+            "monthly": 1200,
+            "quarterly": 3400,
+            "halfYearly": 6600,
+            "annual": 12000
           }
         },
         {
-          "id": "c9-rn-batch2-mwf",
-          "name": "Mathematics & Science - MWF",
+          "id": "c9-rn-mamta-maths-tts",
+          "name": "Mathematics",
           "schedule": {
-            "days": ["Monday", "Wednesday", "Friday"],
-            "time": "6:00 PM - 7:00 PM"
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "4:00 PM - 5:00 PM"
           },
           "teacher": {
-            "name": "Prakash Khatri",
+            "name": "Mamta Ma'am",
             "qualification": "M.Sc., B.Ed.",
             "experience": "10+ years"
           },
           "capacity": 20,
           "enrolled": 14,
           "fees": {
-            "monthly": 2300,
-            "quarterly": 6600,
-            "halfYearly": 12400,
-            "annual": 23000
+            "monthly": 1200,
+            "quarterly": 3400,
+            "halfYearly": 6600,
+            "annual": 12000
+          }
+        },
+        {
+          "id": "c9-rn-akash-sst-tts",
+          "name": "Social Studies",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Akash Sharma Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 10,
+          "fees": {
+            "monthly": 1000,
+            "quarterly": 2800,
+            "halfYearly": 5400,
+            "annual": 10000
+          }
+        },
+        {
+          "id": "c9-rn-akash-maths-mwf",
+          "name": "Mathematics",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "6:00 PM - 7:00 PM"
+          },
+          "teacher": {
+            "name": "Akash Sharma Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 1200,
+            "quarterly": 3400,
+            "halfYearly": 6600,
+            "annual": 12000
+          }
+        },
+        {
+          "id": "c9-rn-akash-science-tts",
+          "name": "Science",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:00 PM - 7:00 PM"
+          },
+          "teacher": {
+            "name": "Akash Sharma Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 1200,
+            "quarterly": 3400,
+            "halfYearly": 6600,
+            "annual": 12000
+          }
+        },
+        {
+          "id": "c9-rn-namita-english-tts",
+          "name": "English",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "6:00 PM - 7:00 PM"
+          },
+          "teacher": {
+            "name": "Namita Ma'am",
+            "qualification": "M.A., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 10,
+          "fees": {
+            "monthly": 1000,
+            "quarterly": 2800,
+            "halfYearly": 5400,
+            "annual": 10000
+          }
+        },
+        {
+          "id": "c9-rn-neetu-science-mwf",
+          "name": "Science",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "7:00 PM - 8:00 PM"
+          },
+          "teacher": {
+            "name": "Neetu Ma'am",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 20,
+          "enrolled": 10,
+          "fees": {
+            "monthly": 1200,
+            "quarterly": 3400,
+            "halfYearly": 6600,
+            "annual": 12000
           }
         }
       ]
@@ -87,10 +250,18 @@
       "board": "CBSE",
       "branch": "Rajendra Nagar",
       "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "comboOffers": [
+        {
+          "label": "Maths + Science Bundle",
+          "subjects": ["Mathematics", "Science"],
+          "monthlyFee": 2500,
+          "savingsPerMonth": 100
+        }
+      ],
       "batches": [
         {
-          "id": "c10-rn-morning-mwf",
-          "name": "Early Morning Batch - MWF",
+          "id": "c10-rn-alok-maths-mwf-645",
+          "name": "Mathematics",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "6:45 AM - 7:45 AM"
@@ -103,57 +274,99 @@
           "capacity": 15,
           "enrolled": 6,
           "fees": {
-            "monthly": 2500,
-            "quarterly": 7200,
-            "halfYearly": 13500,
-            "annual": 25000
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
           }
         },
         {
-          "id": "c10-rn-morning-tts",
-          "name": "Early Morning Batch - TTS",
+          "id": "c10-rn-alok-science-tts-645",
+          "name": "Science",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "6:45 AM - 7:45 AM"
           },
           "teacher": {
-            "name": "Rawat Sir",
+            "name": "Alok Sir",
             "qualification": "M.Sc. Mathematics, B.Ed.",
             "experience": "15+ years"
           },
           "capacity": 15,
           "enrolled": 6,
           "fees": {
-            "monthly": 2500,
-            "quarterly": 7200,
-            "halfYearly": 13500,
-            "annual": 25000
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
           }
         },
         {
-          "id": "c10-rn-afternoon1",
-          "name": "Afternoon Batch - MWF 3PM",
+          "id": "c10-rn-rawat-maths-mwf-3",
+          "name": "Mathematics",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "3:00 PM - 4:00 PM"
           },
           "teacher": {
-            "name": "Neetu Madan",
-            "qualification": "M.Sc., B.Ed.",
-            "experience": "12+ years"
+            "name": "Rawat Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
           },
           "capacity": 18,
-          "enrolled": 15,
+          "enrolled": 12,
           "fees": {
-            "monthly": 2500,
-            "quarterly": 7200,
-            "halfYearly": 13500,
-            "annual": 25000
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
           }
         },
         {
-          "id": "c10-rn-afternoon2",
-          "name": "Afternoon Batch - TTS 4PM",
+          "id": "c10-rn-neetu-science-tts-3",
+          "name": "Science",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "3:00 PM - 4:00 PM"
+          },
+          "teacher": {
+            "name": "Neetu Ma'am",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 18,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
+          }
+        },
+        {
+          "id": "c10-rn-vivek-science-mwf-4",
+          "name": "Science",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "4:00 PM - 5:00 PM"
+          },
+          "teacher": {
+            "name": "Vivek Sir",
+            "qualification": "M.Sc. Physics, B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 18,
+          "enrolled": 14,
+          "fees": {
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
+          }
+        },
+        {
+          "id": "c10-rn-aakash-sst-tts-4",
+          "name": "Social Studies",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"
@@ -164,54 +377,138 @@
             "experience": "12+ years"
           },
           "capacity": 18,
-          "enrolled": 16,
+          "enrolled": 10,
           "fees": {
-            "monthly": 2500,
-            "quarterly": 7200,
-            "halfYearly": 13500,
-            "annual": 25000
+            "monthly": 1000,
+            "quarterly": 2800,
+            "halfYearly": 5400,
+            "annual": 10000
           }
         },
         {
-          "id": "c10-rn-evening1",
-          "name": "Evening Batch - MWF 5PM",
+          "id": "c10-rn-alok-maths-mwf-5",
+          "name": "Mathematics",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "5:00 PM - 6:00 PM"
           },
           "teacher": {
-            "name": "Namita Madan",
-            "qualification": "M.Sc., B.Ed.",
-            "experience": "12+ years"
+            "name": "Alok Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
           },
           "capacity": 18,
-          "enrolled": 17,
+          "enrolled": 15,
           "fees": {
-            "monthly": 2500,
-            "quarterly": 7200,
-            "halfYearly": 13500,
-            "annual": 25000
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
           }
         },
         {
-          "id": "c10-rn-evening2",
-          "name": "Evening Batch - TTS 6:15PM",
+          "id": "c10-rn-alok-science-tts-5",
+          "name": "Science",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Alok Sir",
+            "qualification": "M.Sc. Mathematics, B.Ed.",
+            "experience": "15+ years"
+          },
+          "capacity": 18,
+          "enrolled": 15,
+          "fees": {
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
+          }
+        },
+        {
+          "id": "c10-rn-namita-english-tts-5",
+          "name": "English",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "5:00 PM - 6:00 PM"
+          },
+          "teacher": {
+            "name": "Namita Ma'am",
+            "qualification": "M.A., B.Ed.",
+            "experience": "12+ years"
+          },
+          "capacity": 18,
+          "enrolled": 10,
+          "fees": {
+            "monthly": 1000,
+            "quarterly": 2800,
+            "halfYearly": 5400,
+            "annual": 10000
+          }
+        },
+        {
+          "id": "c10-rn-rawat-maths-tts-615",
+          "name": "Mathematics",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "6:15 PM - 8:00 PM"
           },
           "teacher": {
-            "name": "Aicash Sir",
+            "name": "Rawat Sir",
             "qualification": "M.Sc. Mathematics, B.Ed.",
             "experience": "15+ years"
           },
           "capacity": 18,
-          "enrolled": 18,
+          "enrolled": 16,
           "fees": {
-            "monthly": 2500,
-            "quarterly": 7200,
-            "halfYearly": 13500,
-            "annual": 25000
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
+          }
+        },
+        {
+          "id": "c10-rn-akash-science-mwf-715",
+          "name": "Science",
+          "schedule": {
+            "days": ["Monday", "Wednesday", "Friday"],
+            "time": "7:15 PM - 8:15 PM"
+          },
+          "teacher": {
+            "name": "Akash Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 18,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
+          }
+        },
+        {
+          "id": "c10-rn-akash-maths-tts-715",
+          "name": "Mathematics",
+          "schedule": {
+            "days": ["Tuesday", "Thursday", "Saturday"],
+            "time": "7:15 PM - 8:15 PM"
+          },
+          "teacher": {
+            "name": "Akash Sir",
+            "qualification": "M.Sc., B.Ed.",
+            "experience": "10+ years"
+          },
+          "capacity": 18,
+          "enrolled": 12,
+          "fees": {
+            "monthly": 1300,
+            "quarterly": 3700,
+            "halfYearly": 7000,
+            "annual": 13000
           }
         }
       ]
@@ -225,7 +522,7 @@
       "batches": [
         {
           "id": "c11-rn-batch1-mwf",
-          "name": "PCM Batch - MWF 4PM",
+          "name": "PCM - MWF 4PM",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "4:00 PM - 5:00 PM"
@@ -246,7 +543,7 @@
         },
         {
           "id": "c11-rn-batch1-tts",
-          "name": "PCM Batch - TTS 4PM",
+          "name": "PCM - TTS 4PM",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"
@@ -267,7 +564,7 @@
         },
         {
           "id": "c11-rn-batch2-mwf",
-          "name": "PCM Batch - MWF 6PM",
+          "name": "PCM - MWF 6PM",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "6:00 PM - 7:00 PM"
@@ -288,7 +585,7 @@
         },
         {
           "id": "c11-rn-batch2-tts",
-          "name": "PCM Batch - TTS 6PM",
+          "name": "PCM - TTS 6PM",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "6:00 PM - 7:00 PM"
@@ -432,7 +729,7 @@
       "batches": [
         {
           "id": "c9-sg-science-mwf",
-          "name": "Science Batch (MWF)",
+          "name": "Science (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "4:00 PM - 5:00 PM"
@@ -453,7 +750,7 @@
         },
         {
           "id": "c9-sg-maths-tts",
-          "name": "Mathematics Batch (TTS)",
+          "name": "Mathematics (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"
@@ -474,7 +771,7 @@
         },
         {
           "id": "c9-sg-english-mwf",
-          "name": "English Batch (MWF)",
+          "name": "English (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "5:15 PM - 6:15 PM"
@@ -495,7 +792,7 @@
         },
         {
           "id": "c9-sg-maths-evening-mwf",
-          "name": "Mathematics Evening Batch (MWF)",
+          "name": "Mathematics Evening (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "6:30 PM - 7:30 PM"
@@ -516,7 +813,7 @@
         },
         {
           "id": "c9-sg-science-tts",
-          "name": "Science Batch (TTS)",
+          "name": "Science (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "6:30 PM - 7:30 PM"
@@ -537,7 +834,7 @@
         },
         {
           "id": "c9-sg-sst-tts",
-          "name": "Social Studies Batch (TTS)",
+          "name": "Social Studies (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "7:15 PM - 8:15 PM"
@@ -567,7 +864,7 @@
       "batches": [
         {
           "id": "c10-sg-science-mwf",
-          "name": "Science Batch (MWF)",
+          "name": "Science (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "5:00 PM - 6:00 PM"
@@ -588,7 +885,7 @@
         },
         {
           "id": "c10-sg-maths-tts",
-          "name": "Mathematics Batch (TTS)",
+          "name": "Mathematics (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "5:00 PM - 6:00 PM"
@@ -609,7 +906,7 @@
         },
         {
           "id": "c10-sg-english-mwf",
-          "name": "English Batch (MWF)",
+          "name": "English (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "6:15 PM - 7:15 PM"
@@ -630,7 +927,7 @@
         },
         {
           "id": "c10-sg-maths-evening-mwf",
-          "name": "Mathematics Evening Batch (MWF)",
+          "name": "Mathematics Evening (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "7:15 PM - 8:15 PM"
@@ -651,7 +948,7 @@
         },
         {
           "id": "c10-sg-maths-late-mwf",
-          "name": "Mathematics Late Evening Batch (MWF)",
+          "name": "Mathematics Late Evening (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "7:30 PM - 8:30 PM"
@@ -672,7 +969,7 @@
         },
         {
           "id": "c10-sg-science-tts",
-          "name": "Science Evening Batch (TTS)",
+          "name": "Science Evening (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "7:30 PM - 8:30 PM"
@@ -693,7 +990,7 @@
         },
         {
           "id": "c10-sg-science-afternoon-tts",
-          "name": "Science Afternoon Batch (TTS)",
+          "name": "Science Afternoon (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"
@@ -714,7 +1011,7 @@
         },
         {
           "id": "c10-sg-sst-tts",
-          "name": "Social Studies Batch (TTS)",
+          "name": "Social Studies (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "6:15 PM - 7:15 PM"
@@ -744,7 +1041,7 @@
       "batches": [
         {
           "id": "c11-sg-maths-mwf",
-          "name": "Mathematics Batch (MWF)",
+          "name": "Mathematics (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "6:15 PM - 7:15 PM"
@@ -765,7 +1062,7 @@
         },
         {
           "id": "c11-sg-chemistry-tts",
-          "name": "Chemistry Batch (TTS)",
+          "name": "Chemistry (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "5:00 PM - 6:00 PM"
@@ -786,7 +1083,7 @@
         },
         {
           "id": "c11-sg-physics-tts",
-          "name": "Physics Batch (TTS)",
+          "name": "Physics (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "6:15 PM - 7:15 PM"
@@ -807,7 +1104,7 @@
         },
         {
           "id": "c11-sg-accounts-tts",
-          "name": "Accounts Batch (TTS)",
+          "name": "Accounts (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:45 PM - 5:45 PM"
@@ -828,7 +1125,7 @@
         },
         {
           "id": "c11-sg-maths-evening-tts",
-          "name": "Mathematics Evening Batch (TTS)",
+          "name": "Mathematics Evening (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "8:30 PM - 9:30 PM"
@@ -858,7 +1155,7 @@
       "batches": [
         {
           "id": "c12-sg-maths-morning-mwf",
-          "name": "Mathematics Morning Batch (MWF)",
+          "name": "Mathematics Morning (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "6:30 PM - 7:30 PM"
@@ -879,7 +1176,7 @@
         },
         {
           "id": "c12-sg-maths-evening-mwf",
-          "name": "Mathematics Evening Batch (MWF)",
+          "name": "Mathematics Evening (MWF)",
           "schedule": {
             "days": ["Monday", "Wednesday", "Friday"],
             "time": "8:30 PM - 9:30 PM"
@@ -900,7 +1197,7 @@
         },
         {
           "id": "c12-sg-maths-tts",
-          "name": "Mathematics Batch (TTS)",
+          "name": "Mathematics (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"
@@ -921,7 +1218,7 @@
         },
         {
           "id": "c12-sg-physics-tts",
-          "name": "Physics Batch (TTS)",
+          "name": "Physics (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "5:15 PM - 6:15 PM"
@@ -942,7 +1239,7 @@
         },
         {
           "id": "c12-sg-accounts-tts",
-          "name": "Accounts Batch (TTS)",
+          "name": "Accounts (TTS)",
           "schedule": {
             "days": ["Tuesday", "Thursday", "Saturday"],
             "time": "4:00 PM - 5:00 PM"

@@ -64,6 +64,13 @@ export interface ScheduleData {
   classes: ClassSchedule[];
 }
 
+export interface ComboOffer {
+  label: string;
+  subjects: string[];
+  monthlyFee: number;
+  savingsPerMonth: number;
+}
+
 export interface ClassSchedule {
   id: string;
   name: string; // e.g., "Class 10th"
@@ -71,6 +78,7 @@ export interface ClassSchedule {
   branch: string; // e.g., "Rajendra Nagar" or "Shalimar Garden"
   subjects: string[];
   batches: Batch[];
+  comboOffers?: ComboOffer[];
 }
 
 export interface Batch {

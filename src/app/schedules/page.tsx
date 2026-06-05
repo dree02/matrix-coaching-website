@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ClassSchedule } from '@/lib/types'
 import { getAllSchedules, formatCurrency } from '@/lib/data-fetchers'
-import { Clock, GraduationCap, IndianRupee, MapPin, ExternalLink } from 'lucide-react'
+import { Clock, GraduationCap, IndianRupee, MapPin, ExternalLink, Tag } from 'lucide-react'
 
 const BRANCHES = [
   {
@@ -24,14 +24,7 @@ const BRANCHES = [
 ]
 
 function shouldShowSubjectFilter(classSchedule: ClassSchedule): boolean {
-  if (!classSchedule || classSchedule.batches.length <= 1) return false
-  
-  const allCombinedBatch = classSchedule.batches.every(batch => {
-    const name = batch.name.toLowerCase()
-    return name.includes('mathematics') && name.includes('science')
-  })
-  
-  return !allCombinedBatch
+  return classSchedule.batches.length > 1
 }
 
 function extractSubjectsFromBatches(batches: ClassSchedule['batches']): string[] {
@@ -264,6 +257,34 @@ export default function SchedulesPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
+              {currentClass.comboOffers && currentClass.comboOffers.length > 0 && (
+                <div className="col-span-2">
+                  {currentClass.comboOffers.map(offer => (
+                    <div key={offer.label} className="bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                      <div className="flex items-start gap-3">
+                        <Tag className="flex-shrink-0 mt-1" size={22} />
+                        <div>
+                          <p className="font-bold text-lg">{offer.label}</p>
+                          <p className="text-primary-100 text-sm">
+                            Enroll in both {offer.subjects.join(' & ')} and save{' '}
+                            <span className="font-semibold text-white">₹{offer.savingsPerMonth}/month</span>
+                          </p>
+                          <p className="text-primary-100 text-sm mt-1">
+                            Maths: Tue · Thu · Sat &nbsp;|&nbsp; Science: Mon · Wed · Fri &nbsp;·&nbsp; 4:00 PM – 5:00 PM
+                          </p>
+                        </div>
+                      </div>
+                      <div className="text-right flex-shrink-0">
+                        <p className="text-primary-200 text-sm line-through">₹{(offer.monthlyFee + offer.savingsPerMonth).toLocaleString('en-IN')}/mo</p>
+                        <p className="text-2xl font-bold">₹{offer.monthlyFee.toLocaleString('en-IN')}<span className="text-base font-normal">/mo</span></p>
+                        <Link href="/contact" className="mt-2 inline-block bg-white text-primary-700 text-sm font-semibold px-4 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
+                          Enroll Now
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
               {filteredBatches.length > 0 ? (
                 filteredBatches.map(batch => (
                   <div key={batch.id} className="bg-white rounded-lg shadow-card p-6 hover:shadow-card-hover transition-shadow">
