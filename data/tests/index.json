@@ -1,0 +1,28 @@
+[
+  {
+    "id": "triangles-test-1",
+    "title": "Class 10 - Triangles (Chapter 6) Unit Test",
+    "branch": "Shalimar Garden",
+    "class": "Class 10",
+    "subject": "Mathematics",
+    "topic": "Triangles",
+    "totalMarks": 32,
+    "status": "graded",
+    "createdAt": "2026-10-08T10:00:00Z",
+    "studentsCount": 30,
+    "averageScore": "16.8/32"
+  },
+  {
+    "id": "quadratics-test-1",
+    "title": "Class 10 - Quadratic Equations Test",
+    "branch": "Dilshad Garden",
+    "class": "Class 10",
+    "subject": "Mathematics",
+    "topic": "Quadratic Equations",
+    "totalMarks": 25,
+    "status": "ready_for_grading",
+    "createdAt": "2026-10-18T14:30:00Z",
+    "studentsCount": 24,
+    "averageScore": "Pending"
+  }
+]
