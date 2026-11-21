@@ -80,6 +80,82 @@ export default function TestAssessmentRoom() {
   const [uploadFiles, setUploadFiles] = useState<File[]>([])
   const [gradingInProgress, setGradingInProgress] = useState(false)
   const [whatsappSending, setWhatsappSending] = useState(false)
+  const [generatingKey, setGeneratingKey] = useState(false)
+
+  // Real upload question paper & generate key
+  const handleUploadQuestionPaper = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setGeneratingKey(true)
+
+    const fd = new FormData()
+    fd.append('file', file)
+
+    try {
+      const res = await fetch(`/api/teacher/tests/${testId}/question-paper`, {
+        method: 'POST',
+        body: fd
+      })
+      const data = await res.json()
+      if (data.success) {
+        setAnswerKey(data.answerKey)
+        setKeyApproved(false)
+        if (test) {
+          setTest({
+            ...test,
+            questionPaperUrl: data.questionPaperUrl,
+            answerKeyPdfUrl: data.answerKeyPdfUrl
+          })
+        }
+        alert('Answer key generated successfully! Review the marking points below.')
+      } else {
+        alert(data.error || 'Failed to generate answer key')
+      }
+    } catch (err: any) {
+      console.error(err)
+      alert(err.message || 'Error uploading question paper')
+    } finally {
+      setGeneratingKey(false)
+    }
+  }
+
+  // Real grade student submissions
+  const handleStartGrading = async () => {
+    if (uploadFiles.length === 0) return
+    setGradingInProgress(true)
+
+    const fd = new FormData()
+    uploadFiles.forEach((file) => {
+      fd.append('files', file)
+    })
+
+    try {
+      const res = await fetch(`/api/teacher/tests/${testId}/grade`, {
+        method: 'POST',
+        body: fd
+      })
+      const data = await res.json()
+      if (data.success) {
+        if (test) {
+          setTest({
+            ...test,
+            students: data.students,
+            studentsCount: data.students.length
+          })
+        }
+        setUploadFiles([])
+        setActiveTab('results')
+        alert(`Grading completed! ${data.gradedCount} new result sheets generated.`)
+      } else {
+        alert(data.error || 'Grading failed')
+      }
+    } catch (err: any) {
+      console.error(err)
+      alert(err.message || 'Error during grading')
+    } finally {
+      setGradingInProgress(false)
+    }
+  }
 
   useEffect(() => {
     if (testId) {
@@ -343,7 +419,43 @@ export default function TestAssessmentRoom() {
         {/* TAB 1: ANSWER KEY & REVIEW */}
         {activeTab === 'key' && (
           <div className="space-y-6">
-            {/* Back & Forth AI refinement prompt box */}
+            {answerKey.length === 0 ? (
+              <div className="bg-white p-10 rounded-2xl border border-slate-200 text-center max-w-xl mx-auto shadow-sm">
+                <div className="inline-flex p-3 bg-primary-50 text-primary-600 rounded-2xl mb-4">
+                  <FileText size={36} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-1">
+                  Upload Question Paper PDF
+                </h3>
+                <p className="text-xs text-slate-500 mb-6 leading-relaxed">
+                  Upload the exam question paper (.pdf). Gemini Flash will read each question and automatically generate a step-by-step marking scheme for your review and approval.
+                </p>
+
+                {generatingKey ? (
+                  <div className="p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <div className="inline-block animate-spin rounded-full h-8 w-8 border-4 border-primary-500 border-t-transparent mb-2"></div>
+                    <p className="text-xs font-bold text-slate-700">
+                      Analyzing Question Paper with Gemini Flash...
+                    </p>
+                    <p className="text-[11px] text-slate-400 mt-1">
+                      Generating step-by-step solutions and marks allocation...
+                    </p>
+                  </div>
+                ) : (
+                  <label className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold text-xs px-5 py-3 rounded-xl cursor-pointer shadow-sm transition-all">
+                    <Upload size={16} /> Choose Question Paper (.pdf)
+                    <input
+                      type="file"
+                      accept=".pdf"
+                      className="hidden"
+                      onChange={handleUploadQuestionPaper}
+                    />
+                  </label>
+                )}
+              </div>
+            ) : (
+              <>
+                {/* Back & Forth AI refinement prompt box */}
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 p-5 rounded-2xl">
               <div className="flex items-center gap-2 mb-2">
                 <Sparkles size={18} className="text-primary-600" />
@@ -450,8 +562,10 @@ export default function TestAssessmentRoom() {
                 </table>
               </div>
             </div>
-          </div>
+          </>
         )}
+      </div>
+    )}
 
         {/* TAB 2: UPLOAD ANSWER SHEETS */}
         {activeTab === 'upload' && (
@@ -548,20 +662,12 @@ export default function TestAssessmentRoom() {
                   </div>
 
                   <button
-                    onClick={() => {
-                      setGradingInProgress(true)
-                      setTimeout(() => {
-                        setGradingInProgress(false)
-                        setUploadFiles([])
-                        setActiveTab('results')
-                        alert('Grading completed! 30 Result Sheets generated.')
-                      }, 2500)
-                    }}
+                    onClick={handleStartGrading}
                     disabled={gradingInProgress}
-                    className="w-full mt-4 bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 rounded-xl text-xs shadow-sm flex items-center justify-center gap-2"
+                    className="w-full mt-4 bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 rounded-xl text-xs shadow-sm flex items-center justify-center gap-2 disabled:opacity-50 transition-all"
                   >
-                    <Sparkles size={16} />
-                    {gradingInProgress ? 'Grading with 8 Free Gemini Keys...' : 'Start AI Batch Grading'}
+                    <Sparkles size={16} className={gradingInProgress ? 'animate-spin' : ''} />
+                    {gradingInProgress ? 'Grading with 8 Free Gemini Keys (Please wait)...' : 'Start AI Batch Grading'}
                   </button>
                 </div>
               )}
