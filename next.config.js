@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ CRITICAL: Static export for Cloudflare Pages
-  output: 'export',
+  // output: 'export', // Enabled only for static export
   
   // ✅ No trailing slashes (cleaner URLs)
   trailingSlash: false,

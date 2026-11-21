@@ -1,0 +1,167 @@
+[
+  {
+    "question": "1",
+    "correct_answer": "B) 2.16 cm",
+    "marking_points": [
+      "Find total length AB = AP + PB = 2.4 + 3.6 = 6.0 cm",
+      "Since PQ || BC, ΔAPQ ~ ΔABC, giving PQ/BC = AP/AB",
+      "Calculate PQ = (2.4 / 6.0) × 5.4 = 2.16 cm"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "2",
+    "correct_answer": "B) 4.4 cm",
+    "marking_points": [
+      "By Thales' Theorem (BPT), AD/DB = AE/EC => 3/1 = 3.3/EC => EC = 1.1 cm",
+      "Calculate AC = AE + EC = 3.3 + 1.1 = 4.4 cm"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "3",
+    "correct_answer": "D) 50°",
+    "marking_points": [
+      "Find ratios of sides: AB/QR = BC/PQ = CA/PR = 1/2, so ΔABC ~ ΔRQP",
+      "In ΔABC, ∠C = 180° - (75° + 55°) = 50°",
+      "Corresponding angle ∠P = ∠C = 50°"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "4",
+    "correct_answer": "B) 4 : 7",
+    "marking_points": [
+      "The ratio of perimeters of two similar triangles equals the ratio of their corresponding sides",
+      "Ratio of perimeters = 4 : 7"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "5",
+    "correct_answer": "D) DC² = CF . AC",
+    "marking_points": [
+      "In ΔABC, DE || AB => CD/AC = CE/BC",
+      "In ΔBDC, EF || BD => CF/CD = CE/BC",
+      "Equating both ratios gives CD/AC = CF/CD => DC² = CF . AC"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "6",
+    "correct_answer": "C) x = 16, y = 8.",
+    "marking_points": [
+      "P and R are midpoints of segments CD and DA respectively",
+      "By Midpoint Theorem, line segments parallel to DB are half the length of DB (ratio 1:2)",
+      "Thus x = 16, y = 8"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "7",
+    "correct_answer": "D) A is false but R is true.",
+    "marking_points": [
+      "Check ratio: AD/DB = 5.7/9.5 = 3/5 and AE/EC = 4.8/8 = 3/5, so DE || BC, making Assertion (A) false",
+      "Reason (R) states the Converse of Basic Proportionality Theorem, which is true"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "8",
+    "correct_answer": "A) Both A and R are true and R is the correct explanation of A.",
+    "marking_points": [
+      "In ΔABC, ∠B = 180° - (65° + 60°) = 55° using angle sum property (Reason)",
+      "Since ΔABC ~ ΔPQR, corresponding angle ∠Q = ∠B = 55° (Assertion is true and explained by Reason)"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "9",
+    "correct_answer": "Proof shown: AB² = BC × BD",
+    "marking_points": [
+      "In ΔABD and ΔCBA, ∠DAB = ∠ACB = 90° and ∠B = ∠B (common angle) [1 mark]",
+      "ΔABD ~ ΔCBA by AA similarity criterion [0.5 mark]",
+      "AB/CB = BD/AB => AB² = BC × BD [0.5 mark]"
+    ],
+    "total_marks": 2
+  },
+  {
+    "question": "10",
+    "correct_answer": "DC = 8 cm (assuming AB || CD) or DC = 4 cm (if non-parallel sides are equal)",
+    "marking_points": [
+      "Identify similarity between vertically opposite triangles formed by diagonals: ΔAOB ~ ΔCOD [1 mark]",
+      "Use ratio of corresponding sides: AO/OC = BO/OD = AB/DC = 1/2 [1 mark]",
+      "Calculate DC = 2 × AB = 2 × 4 = 8 cm [1 mark]"
+    ],
+    "total_marks": 3
+  },
+  {
+    "question": "11",
+    "correct_answer": "Proof shown: AF = (1/3)AC",
+    "marking_points": [
+      "Construction: Draw DG || BF meeting AC at G [0.5 mark]",
+      "In ΔADG, E is midpoint of AD and EF || DG => F is midpoint of AG, hence AF = FG [1 mark]",
+      "In ΔBCF, D is midpoint of BC and DG || BF => G is midpoint of FC, hence FG = GC [1 mark]",
+      "Conclude AF = FG = GC => AC = 3AF => AF = (1/3)AC [0.5 mark]"
+    ],
+    "total_marks": 3
+  },
+  {
+    "question": "12",
+    "correct_answer": "Proof shown: PQRS is a parallelogram",
+    "marking_points": [
+      "Join diagonal BD. In ΔABD, AP/AB = AS/AD = 1/3 [1 mark]",
+      "By converse of BPT, PS || BD and PS = (1/3)BD [1.5 marks]",
+      "In ΔCBD, CQ/CB = CR/CD = 1/3, so QR || BD and QR = (1/3)BD [1.5 marks]",
+      "Since PS || QR and PS = QR, one pair of opposite sides is equal and parallel, hence PQRS is a parallelogram [1 mark]"
+    ],
+    "total_marks": 5
+  },
+  {
+    "question": "13",
+    "correct_answer": "Proof shown: ∠BAC = 90°",
+    "marking_points": [
+      "Given AD² = BD × DC => AD/CD = BD/AD [1 mark]",
+      "In ΔDBA and ΔDAC, ∠BDA = ∠ADC = 90° and BD/AD = AD/CD [1.5 marks]",
+      "ΔDBA ~ ΔDAC by SAS similarity criterion => ∠BAD = ∠ACD and ∠ABD = ∠CAD [1.5 marks]",
+      "In right ΔABD, ∠BAD + ∠ABD = 90° => ∠BAD + ∠CAD = 90° => ∠BAC = 90° (Alternatively proved via Pythagoras Theorem: AB² + AC² = BC²) [1 mark]"
+    ],
+    "total_marks": 5
+  },
+  {
+    "question": "14.i",
+    "correct_answer": "BC = 56.4 m",
+    "marking_points": [
+      "In right ΔCHB, cos 45° = BH/BC => BC = BH / cos 45° = 40√2",
+      "BC = 40 × 1.41 = 56.4 m"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "14.ii",
+    "correct_answer": "AG = 38 m",
+    "marking_points": [
+      "In right ΔAGF, tan 45° = GF/AG => AG = GF / tan 45° = 38 / 1 = 38 m"
+    ],
+    "total_marks": 1
+  },
+  {
+    "question": "14.iii",
+    "correct_answer": "Perimeter ≈ 281.06 m (or 245.6 m if using ∠ACH = 60°)",
+    "marking_points": [
+      "Calculate base AB = AG + GD + DH + HB = 38 + 40 + 10 + 40 = 128 m, and CH = 40 m [0.5 mark]",
+      "Calculate AC: In right ΔAHC, AH = 88 m, AC = √(88² + 40²) = √9344 ≈ 96.66 m (or AC = 40/cos 60° = 80 m) [1 mark]",
+      "Perimeter = AB + BC + AC = 128 + 56.4 + 96.66 = 281.06 m [0.5 mark]"
+    ],
+    "total_marks": 2
+  },
+  {
+    "question": "14.iv",
+    "correct_answer": "152.82 m",
+    "marking_points": [
+      "In right ΔEHB, cos 30° = BH/EB => EB = 40 / (√3/2) = 80 / 1.73 ≈ 46.24 m [1 mark]",
+      "Calculate total length = AF + FE + EB = 53.58 + 53 + 46.24 = 152.82 m [1 mark]"
+    ],
+    "total_marks": 2
+  }
+]

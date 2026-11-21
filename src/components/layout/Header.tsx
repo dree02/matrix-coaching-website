@@ -12,6 +12,7 @@ export default function Header() {
     { name: 'Schedules & Fees', href: '/schedules' },
     { name: 'Results', href: '/results' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Teacher Portal', href: '/teacher' },
   ]
 
   return (
@@ -24,13 +25,18 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className={
+                  item.href === '/teacher'
+                    ? "bg-primary-600 text-white hover:bg-primary-700 px-4 py-2 rounded-lg font-medium shadow-sm transition-all flex items-center gap-1.5"
+                    : "text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                }
               >
+                {item.href === '/teacher' && <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>}
                 {item.name}
               </Link>
             ))}
