@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import time
 import itertools
 from google import genai
 from google.genai import types
@@ -76,21 +77,26 @@ Return ONLY a JSON array with this exact structure:
 ]
 No other text. Just the JSON array.
 """
-            response = client.models.generate_content(
-                model='gemini-3.8-flash',
-                contents=[qp_file, prompt],
-                config=types.GenerateContentConfig(response_mime_type="application/json")
-            )
-            
-            data = json.loads(response.text)
-            with open(out_json_path, 'w') as f:
-                json.dump(data, f, indent=2)
-                
-            make_answer_key_pdf(data, out_pdf_path)
-            print(json.dumps({"success": True, "count": len(data)}))
-            return
+            for model_name in ['gemini-flash-lite-latest', 'gemini-3.5-flash-lite', 'gemini-3.8-flash']:
+                try:
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=[qp_file, prompt],
+                        config=types.GenerateContentConfig(response_mime_type="application/json")
+                    )
+                    data = json.loads(response.text)
+                    with open(out_json_path, 'w') as f:
+                        json.dump(data, f, indent=2)
+                        
+                    make_answer_key_pdf(data, out_pdf_path)
+                    print(json.dumps({"success": True, "count": len(data), "model": model_name}))
+                    return
+                except Exception as model_err:
+                    sys.stderr.write(f"Model {model_name} failed: {model_err}\n")
+                    time.sleep(2)
         except Exception as e:
             sys.stderr.write(f"Attempt {attempt+1} failed with key {api_key[-4:]}: {e}\n")
+            time.sleep(3)
             
     print(json.dumps({"success": False, "error": "Failed after 8 attempts"}))
     sys.exit(1)

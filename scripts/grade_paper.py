@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import time
 import itertools
 from google import genai
 from google.genai import types
@@ -90,11 +91,20 @@ Return ONLY a JSON object with this exact structure:
 }}
 No other text. Just the JSON object.
 """
-            response = client.models.generate_content(
-                model='gemini-3.8-flash',
-                contents=[student_file, prompt],
-                config=types.GenerateContentConfig(response_mime_type="application/json")
-            )
+            response = None
+            for model_name in ['gemini-flash-lite-latest', 'gemini-3.5-flash-lite', 'gemini-3.8-flash']:
+                try:
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=[student_file, prompt],
+                        config=types.GenerateContentConfig(response_mime_type="application/json")
+                    )
+                    break
+                except Exception as m_err:
+                    sys.stderr.write(f"Model {model_name} failed: {m_err}\n")
+                    time.sleep(2)
+            if not response:
+                raise Exception("All models failed for this key")
             
             result = json.loads(response.text)
             raw_name = result.get("student_name", "Student").strip()
